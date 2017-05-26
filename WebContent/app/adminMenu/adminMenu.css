@@ -1,0 +1,74 @@
+
+.admin-menu-area {
+    position: relative;
+    background-color: #1E90FF;
+    color: white;
+    padding-left: 0;
+    width: 240px;
+    min-height: 85vh;
+    padding-top: 30px;
+}
+
+.admin-menu-area ul {
+    padding-left: 0;
+}
+
+.admin-menu-area .btn:hover {
+    color: #B0E0E6;
+}
+
+.admin-menu {
+    list-style-type: none;
+    vertical-align: top;
+}
+
+.admin-menu ul {
+    display: inline;
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.admin-menu li {
+    line-height: 3em;
+    cursor: pointer;
+}
+
+.admin-menu li div {
+    display: inline-block;
+    width: 90%;
+    padding-left: 16px;
+}
+
+.admin-selectable-item:hover {
+    background-color: #B0E0E6;
+}
+
+.admin-menu-icon {
+    margin-right: 10px;
+}
+
+.admin-menu-active-indicator {
+    float: right;
+    color: #B0E0E6;
+    margin-right: 0;
+    margin-top: 8px;
+}
+
+.admin-noselect {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.admin-group-indicator-left {
+    float: right;
+    color: #B0E0E6;
+    margin-right: 2px;
+    margin-top: 15px;
+}
+
+.admin-subitem-section {
+    padding-left: 16px;
+}

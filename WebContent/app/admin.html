@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html ng-app = "app">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<title>Admin PHS</title>
+<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+<link href = "https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel = "stylesheet"></link>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" ></link>
+<link href ="admin.css" rel = "stylesheet"></link>
+<link href ="adminHeader/adminHeader.css" rel = "stylesheet" ></link>
+<link href = "adminMenu/adminMenu.css" rel = "stylesheet"><link>
+</head>
+<body class ="container-fluid" > 
+
+<admin-header-directive title = "Welcome Administrator" icon-file = "images/Phs_logo.jpg"></admin-header-directive>
+<admin-menu>
+
+<admin-menu-item label = "Announcement" route = "announcement"></admin-menu-item>
+<admin-menu-item label = "House Keeping" route = "house keeping"></admin-menu-item>
+<admin-menu-item label = "Business Developement Center" route = "developement center"></admin-menu-item>
+<admin-menu-item label = "Locations" route = "locations"></admin-menu-item>
+<admin-menu-group label = "Management" icon = "fa-chevron-left">
+<admin-menu-item label = "Employee Management" route = "employee"></admin-menu-item>
+<admin-menu-item label = "Room Management" route = "room management"></admin-menu-item>
+<admin-menu-item label = "Booking Management" route = "booking"></admin-menu-item>
+<admin-menu-item label = "Payment Management" route = "payment"></admin-menu-item>
+<admin-menu-item label = "Report Management" route = "report"></admin-menu-item>
+</admin-menu-group>
+</admin-menu>
+
+
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src = "https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular.min.js"></script>
+<script src = "https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+<script src = "adminHeader/adminHeaderModule.js"></script>
+<script src = "adminHeader/adminHeaderDirective.js"></script>
+<script src = "adminHeader/adminHeaderCtrl.js"></script>
+<script src = "adminDashboard/adminDashboardModule.js"></script>
+<script src = "adminMenu/adminMenuModule.js"></script>
+<script src ="adminMenu/adminMenuCtrl.js" ></script>
+<script src = "adminMenu/adminMenuDirective.js"></script>
+<script src = "adminMenu/adminMenuItemDirective.js"></script>
+<script src ="adminMenu/adminMenuGroupDirective.js"></script>
+<script src = "appConfig.js"></script>
+<script src="appModule.js"></script></body>
+
+</html>

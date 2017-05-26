@@ -1,0 +1,32 @@
+<div class="admin-title-bar">
+    <div class="row">
+        <div class="admin-logo-area col-sm-6">
+            <img class="admin-icon" ng-src="{{ iconFile }}" />
+            <div class="admin-title-area">
+                <p class="admin-logo-title">{{ title }}</p>
+                
+            </div>
+
+            <div ng-if="isMenuButtonVisible" ng-click="menuButtonClicked()" 
+                 class="admin-collapsed-menu pull-right">
+                <button type="button" class="btn admin-nav-button">
+                    <i class="fa fa-bars"></i>
+                </button>
+            </div>
+
+        </div>
+
+        <div class="admin-right-side-controls col-sm-6">
+            <div>
+                   <button type="button" class="btn btn-default btn-sm">
+          <span class="glyphicon glyphicon-log-out"></span> Log out
+        </button>
+            </div>
+        </div>
+    </div>
+</div>
+<div ng-transclude></div>
+
+<div style="position: absolute; left:300px; top: 200px; color: red; font-size: 44px;">
+    {{routeString}}
+</div>

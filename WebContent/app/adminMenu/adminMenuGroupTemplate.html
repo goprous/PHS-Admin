@@ -1,0 +1,9 @@
+<li class = "admin-selectable-item " ng-click = "clicked()">
+<div class = "admin-noselect">
+{{label}}
+</div>
+<i class="fa fa-chevron-left admin-group-indicator-left"  ng-class = "{'fa-rotate-270':isOpen}"></i>
+</li>
+<div ng-show = "isOpen" class="admin-subitem-section">
+<ul ng-transclude></ul>
+</div>
